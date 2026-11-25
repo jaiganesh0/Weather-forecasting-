@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather Forecasting App</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<h1>Weather forecast</h1>
+<form id="form" class="search"><label class="sr" for="city">City</label><input id="city" placeholder="Search a city, e.g. Chennai" required>
+<button type="submit">Search</button><button type="button" id="unit" aria-label="Switch unit">°C</button></form>
+<p id="status" role="status"></p>
+<section class="now" aria-live="polite"><div><h2 id="place">-</h2><p id="cond">-</p></div><div class="temp" id="temp">-</div></section>
+<section class="stats"><div><span id="hum">-</span>Humidity</div><div><span id="wind">-</span>Wind</div></section>
+<h3>Next 5 days</h3><div id="days" class="days"></div>
+</main><script src="script.js"></script></body></html>
